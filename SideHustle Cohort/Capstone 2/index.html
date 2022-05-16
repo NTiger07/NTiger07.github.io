@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 112 Capstone 2 Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/9df385ade9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="responsive_navbar">
+            <nav class="navbar">
+                <div id="logo_container">GROUP 112</div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="hamburger_row"></div>
+                <div class="hamburger_row"></div>
+                <div class="hamburger_row"></div>
+            </div>
+            <div class="hamburger_two">
+                <div class="hamburger_row-two" id="one"></div>
+                <div class="hamburger_row-two" id="two"></div>
+                <div class="hamburger_row-two" id="three"></div>
+            </div>
+        </div>
+        <div class="open_navbar">
+            <ul class="open_list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div class="form_container">
+            <form name="main_form" onSubmit="return FormValidation()" action="valid.html">
+                <input type="text" placeholder="Username" id="userName">
+                <span class="error">Choose a User Name</span>
+                <input type="email" placeholder="Email" id="email">
+                <span class="error">Enter your Email</span>
+                <input type="tel" placeholder="Phone Number" id="phone">
+                <span class="error">Enter your Phone Number</span>
+                <div class="password_container">
+                    <input type="password" placeholder="Password" id="password">
+                    <span class="error">Choose a Password</span>
+                    <i class="fa-solid fa-eye-slash" id="first_passSlashed"></i>
+                    <i class="fa-solid fa-eye" id="first_passOpen"></i>
+                </div>
+                <div class="password_container">
+                    <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                    <span class="error">Passwords don't match</span>
+                    <i class="fa-solid fa-eye-slash" id="confirmSlashed"></i>
+                    <i class="fa-solid fa-eye" id="confirmOpen"></i>
+                </div>
+                <div class="gender">
+                    <span>Gender:</span>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="unspecified">Prefer not to say</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
